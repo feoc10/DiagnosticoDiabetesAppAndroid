@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DiagnosticoDiabetesAppAndroid</string>
+    <string name="carrega_modelos">Carrega Modelos</string>
+    <string name="previsao_button">Carrega Previsão</string>
 </resources>
