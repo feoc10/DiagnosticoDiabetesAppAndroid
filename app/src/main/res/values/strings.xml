@@ -2,4 +2,6 @@
     <string name="app_name">DiagnosticoDiabetesAppAndroid</string>
     <string name="carrega_modelos">Carrega Modelos</string>
     <string name="previsao_button">Carrega Previsão</string>
+    <string name="modelo_selecionado_phrase">Modelo Selecionado: %1$s</string>
+    <string name="selecione_o_modelo_desejado">Selecione o modelo desejado:</string>
 </resources>

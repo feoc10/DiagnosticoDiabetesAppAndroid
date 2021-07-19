@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-parcelize'
 }
 
 android {
@@ -53,11 +54,24 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.5'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0'
 
     //retrofit2
     implementation 'com.squareup.retrofit2:retrofit:2.7.1'
-    implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
 
+    // Koin main features for Android (Scope,ViewModel ...)
+    implementation "io.insert-koin:koin-android:$koin_version"
+    // Koin Java Compatibility
+    implementation "io.insert-koin:koin-android-compat:$koin_version"
+    // Testing
+    testImplementation "io.insert-koin:koin-test:$koin_version"
+
+    // view model scope
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0-alpha02"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //mask input
+    implementation 'io.github.vicmikhailau:MaskedEditText:4.0.5'
 }

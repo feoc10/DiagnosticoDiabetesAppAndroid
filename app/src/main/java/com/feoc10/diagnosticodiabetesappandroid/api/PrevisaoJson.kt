@@ -1,5 +1,7 @@
 package com.feoc10.diagnosticodiabetesappandroid.api
 
+import java.io.Serializable
+
 data class PrevisaoJson(
     val altura: Double,
     val cintura: Double,
@@ -9,4 +11,4 @@ data class PrevisaoJson(
     val idade: Int,
     val peso: Int,
     val pressao_arterial: String
-)
+) : Serializable

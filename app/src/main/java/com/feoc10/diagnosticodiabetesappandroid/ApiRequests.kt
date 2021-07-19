@@ -7,6 +7,7 @@ import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
+import retrofit2.http.Path
 
 interface ApiRequests {
 
@@ -18,4 +19,7 @@ interface ApiRequests {
 
     @POST("/rdf")
     fun postRandomForest(@Body previsaoJson: PrevisaoJson):Call<ResponseJson>
+
+    @POST("{modelo}")
+    fun postmodel(@Path("modelo") modelo: String, @Body previsaoJson: PrevisaoJson):Call<ResponseJson>
 }
